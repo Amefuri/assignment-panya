@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  PanyaAssignment
+
+  Created by peerapat atawatana on 9/7/2562 BE.
+  Copyright © 2562 Socket9. All rights reserved.
+*/
+
+"Global.OK" = "OK";
+
+"CreateAccount.Title" = "Create Account";
+"CreateAccount.EmailTitle" = "EMAIL :";
+"CreateAccount.PasswordTitle" = "PASSWORD :";
+"CreateAccount.RegisterButton" = "REGISTER";
+"CreateAccount.Terms" = "By register you agree to Panya's Terms of Service and Privacy Policy";
+
+"RoundStreak.Title" = "ROUND STREAK";
+"RoundStreak.Description" = "Receive extra lives! Join the game for\nmore tha 5 consecutive rounds.\nThe more rounds joined, the more hearts given\n(join the game before the first question appears)\nMiss a single round and start over!";
+"RoundStreak.Description.Hightlight1" = "more tha 5 consecutive rounds.";
+"RoundStreak.Description.Hightlight2" = "(join the game before the first question appears)";
+"RoundStreak.PlayRound" = "You have consecutively played: %d rounds";
+"RoundStreak.Round" = "ROUND";
