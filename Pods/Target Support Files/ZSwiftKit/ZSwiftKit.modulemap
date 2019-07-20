@@ -1,6 +1,0 @@
-framework module ZSwiftKit {
-  umbrella header "ZSwiftKit-umbrella.h"
-
-  export *
-  module * { export * }
-}
