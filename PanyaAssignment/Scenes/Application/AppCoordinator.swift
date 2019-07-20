@@ -16,7 +16,14 @@ protocol AppInputsParamsType {
 class AppCoordinator: BaseCoordinator<Void> {
   
   override func start() -> Observable<Void> {
-    let createAccountCoordinator = CreateAccountCoordinator(window: window)
-    return coordinate(to: createAccountCoordinator)
+    //let createAccountCoordinator = CreateAccountCoordinator(window: window)
+    //return coordinate(to: createAccountCoordinator)
+    
+    let roundStreakCoordinator = RoundStreakCoordinator(window: window)
+    let userModel = UserModel()
+    userModel.accessToken = "LBuq9M8UwZnrsz0EAHgnBS9CrJtm7VnX/XICUvm4XEc"
+    userModel.consecutiveRoundCount = 7
+    roundStreakCoordinator.userModel = userModel
+    return coordinate(to: roundStreakCoordinator)
   }
 }

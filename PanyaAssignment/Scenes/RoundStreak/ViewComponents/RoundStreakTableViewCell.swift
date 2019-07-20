@@ -27,6 +27,16 @@ class RoundStreakTableViewCell: UITableViewCell {
     roundContainerView.forEach { (each) in
       each.clipsToBounds = true
     }
+    
+  }
+  
+  override func layoutSubviews() {
+    super.layoutSubviews()
+    
+    roundContainerView.forEach { (view) in
+      view.layoutIfNeeded()
+    }
+    
     if let firstRoundView = roundContainerView.first {
       firstRoundView.roundCorners([.topLeft, .bottomLeft], radius: firstRoundView.frame.height/2)
     }
